@@ -1,0 +1,120 @@
+.navbar {
+    background-color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px; /* Điều chỉnh kích thước hình logo */
+}
+
+.navlist ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navlist li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Style for Registration Form */
+#registerForm {
+    max-width: 500px;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    // background-image: url(img/backgroud.jpg); /* Đường dẫn đến tệp ảnh */
+    // background-size: cover; /* Đảm bảo ảnh kích thước đúng */
+    // background-position: center; /* Căn ảnh vào giữa */
+}
+
+#registerForm h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.inputForm {
+    margin-bottom: 1.5rem;
+}
+
+.username,
+.password,
+.Co-password,
+.email {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+.username i,
+.password i,
+.Co-password i,
+.email i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.username input,
+.password input,
+.Co-password input,
+.email input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: calc(100% - 25px);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #FF5733;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #DE9E5B;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.Form{
+    position: relative;
+}
+
+.Form #registerForm{
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+
+.form{
+    position: relative;
+}
+
+.form #text{
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+
+.email {
+    border-bottom: none;
+}
+
+#text{
+    max-width: 500px;
+    margin: auto;
+    padding: 2rem;
+}
