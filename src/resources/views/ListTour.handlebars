@@ -1,0 +1,106 @@
+<div class="bg-[#EDF3FE] p-4 shadow-lg">
+    <h2 class="text-[081B46] text-xl font-bold mb-2">Lọc kết quả</h2>
+
+    <form class="grid grid-cols-8 grid-rows-2 gap-4 relative">
+        <div class="col-span-2 pr-10">
+            <label class="text-[081B46] font-bold block mb-2">LOẠI HÌNH TOUR</label>
+            <select class="border-black border-2 w-full py-2 px-3 shadow-lg" name="tour-type">
+                <option value="adventure">Adventure</option>
+                <option value="beach">Beach</option>
+                <option value="cultural">Cultural</option>
+                <!-- Thêm các loại hình tour khác tại đây -->
+            </select>
+        </div>
+        <div class="col-span-2 pr-10">
+            <label class="text-[081B46] font-bold block mb-2">ĐIỂM ĐI</label>
+            <input type="text" class="border-black border-2 w-full py-2 px-3 shadow-lg" name="departure">
+        </div>
+        <div class="col-span-2 pr-10">
+            <label class="text-[081B46] font-bold block mb-2">ĐIỂM ĐẾN</label>
+            <input type="text" class="border-black border-2 w-full py-2 px-3 shadow-lg" name="destination">
+        </div>
+        <div class="col-span-2 pr-10">
+            <label class="text-[081B46] font-bold block mb-2">SỐ NGƯỜI</label>
+            <input type="number" class="border-black border-2 w-full py-2 px-3 shadow-lg" name="number-of-people">
+        </div>
+
+        <div class="col-span-2 pr-10">
+            <label class="text-[081B46] font-bold block mb-2">NGÀY ĐI</label>
+            <input type="date" class="border-black border-2 w-full py-2 px-3 shadow-lg" name="departure-date">
+        </div>
+        <div class="col-span-2 pr-10">
+            <p class="text-[081B46] font-bold block mb-2">SỐ NGÀY</p>
+            <input type="radio" id="3-4" name="fav_language" value="3-4">
+            <label for="3-4">3-4 ngày</label><br>
+            <input type="radio" id="4-7" name="fav_language" value="4-7">
+            <label for="css">4-7 ngày</label><br>
+            <input type="radio" id="8-14" name="fav_language" value="8-14">
+            <label for="javascript">8-14 ngày</label>
+        </div>
+        <div class="col-span-2 pr-10">
+            <p class="text-[081B46] font-bold block mb-2">DÒNG TOUR</p>
+            <input type="radio" id="3-4" name="fav_language" value="3-4">
+            <label for="3-4">Tiêu chuẩn</label><br>
+            <input type="radio" id="4-7" name="fav_language" value="4-7">
+            <label for="css">Cao cấp</label><br>
+            <input type="radio" id="8-14" name="fav_language" value="8-14">
+            <label for="javascript">Giá tốt</label>
+        </div>            
+        <div class="col-span-2">
+            <p class="text-[081B46] font-bold block mb-2">PHƯƠNG TIỆN VẬN CHUYỂN</p>
+            <input type="radio" id="3-4" name="fav_language" value="3-4">
+            <label for="3-4">Máy bay</label><br>
+            <input type="radio" id="4-7" name="fav_language" value="4-7">
+            <label for="css">Xe</label><br>
+        </div>
+        <div class="col-span-8 flex justify-end mr-10">
+            <button class="border-black border-2 bg-white text-green-500 px-6 py-3 rounded-md hover:bg-green-700 hover:text-white" type="submit">Lọc</button>
+        </div>
+    </form>
+
+</div>
+
+<div class="my-8">
+    <section class="max-w-[600px] mx-auto bg-white rounded-lg shadow-lg border border-gray-300">
+        <div class="relative">
+            <img src="/img/thailan.png" alt="Thái Lan" class="w-full">
+            <div class="absolute top-0 left-0 p-4">
+                <img src="/img/heart.png" alt="Heart" class="w-6 h-6">
+            </div>
+            <div class="absolute top-0 right-0 flex items-center justify-center bg-orange text-black p-2 rounded-tl-lg">
+                <img src="/img/point.png" alt="">
+            </div>
+            <div class="absolute top-3 right-0 flex items-center justify-center bg-grey p-2 rounded-tl-lg">
+                <p class="ml-2">Tuyệt vời</p>
+                <p class="mr-2">500 quan tâm</p>
+            </div>
+            <div class="absolute bottom-0 left-0 flex items-center bg-white p-2">
+                <img src="/img/time.png" alt="" style="width: 15px; height: 15px;">
+                <p class="ml-2">Giá tốt</p>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <p class="mb-4">10/10/2023 - 4N3Đ - Giờ đi: 17:30</p>
+
+            <h2 class="text-2xl font-bold mb-4 text-[#3C4E5D]">Đà Nẵng - Huế - Cầu Vàng - Sơn Trà - Hội An (Khách sạn 4 * Trọn Tour)</h2>
+
+            <div class="flex items-center mb-4">
+                <img src="/img/ticket.png" alt="" style="width: 20px; height: 20px; margin-right: 20px;">
+                <span class="font-bold">Mã tour: NNSGN1311-284-101023VU-N</span>
+            </div>
+
+            <h2 class="text-2xl font-bold mb-4 text-[#3C4E5D]">Nơi khởi hành: TP. Hồ Chí Minh</h2>
+
+            <p class="text-xl font-bold mb-4"><span class="text-xl text-red-600">7,800,000 </span>đ</p>
+
+            <div class="flex justify-between items-center mb-4">
+                <button id="btn-DatTour" class="flex items-center px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-800">
+                    <img style="margin-right: 15px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAaxJREFUSEvFVTtOAzEUnKEHcQRScgJawkUgDRE3gAqo4AaINCQXIWk5ASU5AoKeQS/YK2fZ9Sfa1T5pq7U9b8Yzz8RAxYFwMTywpCMA9m2K5KpPNSrGku4A3NbARiTXfTSQAl6RHPcNHEp9GrDvhXWjudx9L92dz0lOumbd6mpJLwAuHGAXcq9Dv8SATW5j3WWNfVqiOZb0EUasgw4mJOebuMYOq0XMNix2AD/3V0aywktOroB1cbScSU01q3uSNiv+BlSKQY11UbRqeyuZc4FDk211ndG094g5ehSuTzK2xZLM3daAVRbrmMxZjB2w5dlybbUlWRvr1BVlMXbgXrYsk0mSa+qfzNmMHXD4eqUmmc19r1CjL0oY22F+fqd8Vf0Ps1tsLr+h5c2ONdHqh2zGAbh3d4r11qNQX7wL8CWAQwBPJL/rB0raB3AF4JPkrK27ImBJDwCu3WFLkmcNwK8AvPkeSd40gZcCh4eK5F4D8E8wihubK4qTi5TJ/OzAZiSnDcD239ZZTdvkLmLswI8BHJB8i0ytEwBfJN87ueOUjUv+FzMuOTy2djDgX8jnrx+RS1QnAAAAAElFTkSuQmCC"/>Đặt ngay</button>
+                <button id="btn-XemChiTiet" class="px-4 py-2 bg-white border border-blue-600 text-blue-600 rounded-md hover:bg-blue-600 hover:text-white">Xem chi tiết</button>
+            </div>
+
+            <p class="text-right">Số chỗ còn nhận: <span class="text-2xl text-red-600">3</span></p>
+        </div>
+    </section>
+</div>
